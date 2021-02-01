@@ -1,0 +1,105 @@
+Notify: search current JDK in Windows registry at(SOFTWARE\JavaSoft\Java Development Kit)
+Notify: JDK found at C:/Program Files (x86)/Java/jdk1.8.0_201
+Virtual User Script started at: 12/28/2020 11:51:40 PM
+Starting action vuser_init.
+Actions.java(80): Notify: Transaction "Bind User" started.
+Actions.java(82): Notify: Transaction "Bind User" ended with a "Pass" status (Duration: 1.1727).
+System.out: User Authenticated! {java.naming.provider.url=ldaps://vds-qp.homedepot.com:1636, java.naming.factory.initial=com.sun.jndi.ldap.LdapCtxFactory, java.naming.security.principal=CN=svc_vds_perftest service account,OU=Deny Logon,OU=Service Accounts,OU=Servers & Applications,ou=amer.homedepot.com,o=thdad, java.naming.security.authentication=simple, java.naming.security.credentials=TestMe123!}                                                                                                                                                      Notify:
+Ending action vuser_init.
+Running Vuser...
+Starting iteration 1.
+Starting action Actions.
+Actions.java(53): Notify: Parameter Substitution: parameter "prmsamuser" =  "TESTVDS490700"
+Actions.java(109): Notify: Transaction "Search User" started.
+Actions.java(111): Notify: Transaction "Search User" ended with a "Pass" status (Duration: 0.0513).
+System.out: cn: Hartwald Reder                                                                                                                                                      Notify:
+System.out: mail: Hartwald.Reder@AMER.QAHomedepot.com                                                                                                                                                      Notify:
+System.out: sharepointgroup: AMER\TestVDS-Group10, AMER\TestVDS-Group09, AMER\TestVDS-Group08, AMER\TestVDS-Group07, AMER\TestVDS-Group06, AMER\TestVDS-Group05, AMER\TestVDS-Group04, AMER\TestVDS-Group03, AMER\TestVDS-Group02, AMER\TestVDS-Group01, VIS\ag-Contractors, VIS\ag-Kenexa_2xB, VIS\ag-Kenexa_TG, SUN\WH Bear Rcv Adhoc, SUN\WH Bear Rcv, SUN\ECM Planograms, SUN\SO Measurer, SUN\SO Installer                                                                                                                                                      Notify:
+System.out: CN=Hartwald Reder,OU=Test,OU=Non Associate,OU=THD Accounts,ou=amer.homedepot.com,o=thdad                                                                                                                                                      Notify:
+Actions.java(80): Notify: Transaction "Bind User" started.
+Actions.java(82): Notify: Transaction "Bind User" ended with a "Pass" status (Duration: 0.1695).
+System.out: User Authenticated! {java.naming.provider.url=ldaps://vds-qp.homedepot.com:1636, java.naming.factory.initial=com.sun.jndi.ldap.LdapCtxFactory, java.naming.security.principal=CN=Hartwald Reder,OU=Test,OU=Non Associate,OU=THD Accounts,ou=amer.homedepot.com,o=thdad, java.naming.security.authentication=simple, java.naming.security.credentials=P@ssw0rd123}                                                                                                                                                      Notify:
+Actions.java(131): Notify: Transaction "UnBind User" started.
+Actions.java(133): Notify: Transaction "UnBind User" ended with a "Pass" status (Duration: 0.0173).
+Ending action Actions.
+Ending iteration 1.
+Starting iteration 2.
+Notify: Next row for parameter prmsamuser = 109 [table  = prmsamuser].
+Notify: Getting new value for parameter 'prmsamuser': table = 'prmsamuser.dat' column = '0' row = '109'.
+Starting action Actions.
+Actions.java(53): Notify: Parameter Substitution: parameter "prmsamuser" =  "TestVDS-Group09"
+Actions.java(109): Notify: Transaction "Search User" started.
+Actions.java(111): Notify: Transaction "Search User" ended with a "Pass" status (Duration: 0.0371).
+System.out: cn: TestVDS-Group09                                                                                                                                                      Notify:
+System.out: null                                                                                                                                                      Notify:
+System.out: null                                                                                                                                                      Notify:
+System.out: CN=TestVDS-Group09,OU=TestGroups,OU=Test,OU=Non Associate,OU=THD Accounts,ou=amer.homedepot.com,o=thdad                                                                                                                                                      Notify:
+Actions.java(80): Notify: Transaction "Bind User" started.
+Actions.java(85): Notify: Transaction "Bind User" ended with a "Fail" status (Duration: 0.2389).
+Actions.java(85): Notify: Transaction "Bind User" has 0 error message(s).
+System.out: [LDAP: error code 49 - 80090308: LdapErr: DSID-0C090453, comment: AcceptSecurityContext error, data 52e, v3839]                                                                                                                                                      Notify:
+Actions.java(131): Notify: Transaction "UnBind User" started.
+Actions.java(133): Notify: Transaction "UnBind User" ended with a "Pass" status (Duration: 0.0024).
+Ending action Actions.
+Ending iteration 2.
+Starting iteration 3.
+Notify: Next row for parameter prmsamuser = 2 [table  = prmsamuser].
+Notify: Getting new value for parameter 'prmsamuser': table = 'prmsamuser.dat' column = '0' row = '2'.
+Starting action Actions.
+Actions.java(53): Notify: Parameter Substitution: parameter "prmsamuser" =  "TESTVDS217033"
+Actions.java(109): Notify: Transaction "Search User" started.
+Actions.java(111): Notify: Transaction "Search User" ended with a "Pass" status (Duration: 0.0391).
+System.out: cn: Anuschka Wichmann                                                                                                                                                      Notify:
+System.out: mail: Anuschka.Wichmann@AMER.QAHomedepot.com                                                                                                                                                      Notify:
+System.out: sharepointgroup: AMER\TestVDS-Group10, AMER\TestVDS-Group09, AMER\TestVDS-Group08, AMER\TestVDS-Group07, AMER\TestVDS-Group06, AMER\TestVDS-Group05, AMER\TestVDS-Group04, AMER\TestVDS-Group03, AMER\TestVDS-Group02, AMER\TestVDS-Group01, VIS\ag-Contractors, VIS\ag-Kenexa_2xB, VIS\ag-Kenexa_TG, SUN\CR Admin, SUN\CB CitiCredit Disputes, SUN\CB CitiCredit CSR, SUN\Call Box Corporate User, SUN\Call Box Store Mgr User                                                                                                                                                      Notify:
+System.out: CN=Anuschka Wichmann,OU=Test,OU=Non Associate,OU=THD Accounts,ou=amer.homedepot.com,o=thdad                                                                                                                                                      Notify:
+Actions.java(80): Notify: Transaction "Bind User" started.
+Actions.java(82): Notify: Transaction "Bind User" ended with a "Pass" status (Duration: 0.3328).
+System.out: User Authenticated! {java.naming.provider.url=ldaps://vds-qp.homedepot.com:1636, java.naming.factory.initial=com.sun.jndi.ldap.LdapCtxFactory, java.naming.security.principal=CN=Anuschka Wichmann,OU=Test,OU=Non Associate,OU=THD Accounts,ou=amer.homedepot.com,o=thdad, java.naming.security.authentication=simple, java.naming.security.credentials=P@ssw0rd123}                                                                                                                                                      Notify:
+Actions.java(131): Notify: Transaction "UnBind User" started.
+Actions.java(133): Notify: Transaction "UnBind User" ended with a "Pass" status (Duration: 0.0049).
+Ending action Actions.
+Ending iteration 3.
+Starting iteration 4.
+Notify: Next row for parameter prmsamuser = 1 [table  = prmsamuser].
+Notify: Getting new value for parameter 'prmsamuser': table = 'prmsamuser.dat' column = '0' row = '1'.
+Starting action Actions.
+Actions.java(53): Notify: Parameter Substitution: parameter "prmsamuser" =  "TESTVDS157544"
+Actions.java(109): Notify: Transaction "Search User" started.
+Actions.java(111): Notify: Transaction "Search User" ended with a "Pass" status (Duration: 0.0372).
+System.out: cn: Sigward Thimm                                                                                                                                                      Notify:
+System.out: mail: Sigward.Thimm@AMER.QAHomedepot.com                                                                                                                                                      Notify:
+System.out: sharepointgroup: AMER\TestVDS-Group10, AMER\TestVDS-Group09, AMER\TestVDS-Group08, AMER\TestVDS-Group07, AMER\TestVDS-Group06, AMER\TestVDS-Group05, AMER\TestVDS-Group04, AMER\TestVDS-Group03, AMER\TestVDS-Group02, AMER\TestVDS-Group01, VIS\ag-Contractors, VIS\ag-Kenexa_2xB, VIS\ag-Kenexa_TG, SUN\HR Dept Sups, SUN\AA Guardian Training User, SUN\AA HD Guardian User, SUN\AA Partner Guardian User, SUN\BEAR RTV Read Only                                                                                                                                                      Notify:
+System.out: CN=Sigward Thimm,OU=Test,OU=Non Associate,OU=THD Accounts,ou=amer.homedepot.com,o=thdad                                                                                                                                                      Notify:
+Actions.java(80): Notify: Transaction "Bind User" started.
+Actions.java(82): Notify: Transaction "Bind User" ended with a "Pass" status (Duration: 0.1866).
+System.out: User Authenticated! {java.naming.provider.url=ldaps://vds-qp.homedepot.com:1636, java.naming.factory.initial=com.sun.jndi.ldap.LdapCtxFactory, java.naming.security.principal=CN=Sigward Thimm,OU=Test,OU=Non Associate,OU=THD Accounts,ou=amer.homedepot.com,o=thdad, java.naming.security.authentication=simple, java.naming.security.credentials=P@ssw0rd123}                                                                                                                                                      Notify:
+Actions.java(131): Notify: Transaction "UnBind User" started.
+Actions.java(133): Notify: Transaction "UnBind User" ended with a "Pass" status (Duration: 0.0036).
+Ending action Actions.
+Ending iteration 4.
+Starting iteration 5.
+Notify: Next row for parameter prmsamuser = 100 [table  = prmsamuser].
+Notify: Getting new value for parameter 'prmsamuser': table = 'prmsamuser.dat' column = '0' row = '100'.
+Starting action Actions.
+Actions.java(53): Notify: Parameter Substitution: parameter "prmsamuser" =  "TESTVDS164642"
+Actions.java(109): Notify: Transaction "Search User" started.
+Actions.java(111): Notify: Transaction "Search User" ended with a "Pass" status (Duration: 0.0424).
+System.out: cn: Wilmhard Sippel                                                                                                                                                      Notify:
+System.out: mail: Wilmhard.Sippel@AMER.QAHomedepot.com                                                                                                                                                      Notify:
+System.out: sharepointgroup: AMER\TestVDS-Group10, AMER\TestVDS-Group09, AMER\TestVDS-Group08, AMER\TestVDS-Group07, AMER\TestVDS-Group06, AMER\TestVDS-Group05, AMER\TestVDS-Group04, AMER\TestVDS-Group03, AMER\TestVDS-Group02, AMER\TestVDS-Group01, VIS\ag-Contractors, VIS\ag-Kenexa_2xB, VIS\ag-Kenexa_TG                                                                                                                                                      Notify:
+System.out: CN=Wilmhard Sippel,OU=Test,OU=Non Associate,OU=THD Accounts,ou=amer.homedepot.com,o=thdad                                                                                                                                                      Notify:
+Actions.java(80): Notify: Transaction "Bind User" started.
+Actions.java(82): Notify: Transaction "Bind User" ended with a "Pass" status (Duration: 0.4150).
+System.out: User Authenticated! {java.naming.provider.url=ldaps://vds-qp.homedepot.com:1636, java.naming.factory.initial=com.sun.jndi.ldap.LdapCtxFactory, java.naming.security.principal=CN=Wilmhard Sippel,OU=Test,OU=Non Associate,OU=THD Accounts,ou=amer.homedepot.com,o=thdad, java.naming.security.authentication=simple, java.naming.security.credentials=P@ssw0rd123}                                                                                                                                                      Notify:
+Actions.java(131): Notify: Transaction "UnBind User" started.
+Actions.java(133): Notify: Transaction "UnBind User" ended with a "Pass" status (Duration: 0.0094).
+Ending action Actions.
+Ending iteration 5.
+Ending Vuser...
+Starting action vuser_end.
+Actions.java(131): Notify: Transaction "UnBind User" started.
+Actions.java(133): Notify: Transaction "UnBind User" ended with a "Pass" status (Duration: 0.0080).
+Ending action vuser_end.
+Vuser Terminated.
+Vuser 0 (thread 108112), ended OK."

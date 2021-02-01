@@ -1,0 +1,6 @@
+# Unnecessary files added as part of the standard VuGen script template
+Breakpoints.xml
+*.sdf
+ReplaySummaryReport.xml
+ThumbnailsCache.tmp
+UserTasks.xml
